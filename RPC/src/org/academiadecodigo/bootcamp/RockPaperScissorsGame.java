@@ -4,8 +4,8 @@ public class RockPaperScissorsGame {
     private static final int NUM_ROUNDS = 3;
 
     public static void playGame() {
-        Player player1 = new Player("MJ");
-        Player player2 = new Player("RC");
+        Player player1 = new Player("ABC");
+        Player player2 = new Player("DEF");
 
 
         for (int round = 1; round <= NUM_ROUNDS; round++) {
