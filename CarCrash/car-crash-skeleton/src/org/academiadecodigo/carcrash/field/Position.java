@@ -1,14 +1,25 @@
 package org.academiadecodigo.carcrash.field;
+import org.academiadecodigo.carcrash.cars.Car;
+import org.academiadecodigo.carcrash.cars.CarFactory;
+import org.academiadecodigo.carcrash.field.Field;
 
 public class Position {
 
+    public int col;
+    public int row;
+
     public int getCol() {
-        int height = (int)Math.ceil(Math.random()* 25);
-        return height;
+        return col;
     }
 
     public int getRow() {
-        int width = (int)Math.ceil(Math.random()* 100);
-        return width;
+        return row;
     }
+
+    public Position(int col, int row) {
+        this.col = (int) (Math.random() * Field.width);
+        this.row = (int) (Math.random() * Field.height);
+    }
+
+
 }

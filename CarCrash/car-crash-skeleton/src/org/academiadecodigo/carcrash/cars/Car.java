@@ -1,14 +1,17 @@
 package org.academiadecodigo.carcrash.cars;
 
 import org.academiadecodigo.carcrash.field.Position;
+import org.academiadecodigo.carcrash.cars.Car;
+import org.academiadecodigo.carcrash.cars.CarFactory;
+import org.academiadecodigo.carcrash.field.Field;
 
-abstract  public class Car {
+ public class Car {
 
     /** The position of the car on the grid */
-    private Position pos;
+    public Position pos;
 
-    public Car (Position position){
-        this.pos = position;
+    public Car(int col, int row) {
+        this.pos = new Position(col, row);
     }
 
     public Position getPos() {
@@ -18,4 +21,8 @@ abstract  public class Car {
     public boolean isCrashed() {
         return false;
     }
+     @Override
+     public String toString() {
+         return "ÇA FODA ESTA MERDA";
+     }
 }

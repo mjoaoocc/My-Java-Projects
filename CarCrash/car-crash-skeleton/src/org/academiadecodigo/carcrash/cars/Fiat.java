@@ -5,10 +5,7 @@ import org.academiadecodigo.carcrash.field.Position;
 public class Fiat extends Car {
 
     public Fiat(Position position){
-        super(position);
+        super(position.getCol(), position.getRow());
     }
-    @Override
-    public String toString() {
-        return "F";
-    }
+
 }

@@ -9,8 +9,8 @@ import org.academiadecodigo.carcrash.cars.Car;
 
 public final class Field {
 
-    private static int width;
-    private static int height;
+    public static int width;
+    public static int height;
 
     // Used to write to screen
     private static Screen screen;
